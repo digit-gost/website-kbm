@@ -1,0 +1,295 @@
+/* This CSS file contain all the style applied on website. The "main style" */
+/* ==========================================================
+                          BASE COLORS
+========================================================== */
+:root {
+    --main-color: #009150;        /* Vert principal */
+    --second-color: #33b77a;      /* Vert clair */
+    --accent-color: #fd297b;      /* Rose accent */
+    --info-color: #2760dc;        /* Bleu info */
+    --warning-color: #ffb400;     /* Jaune/orangé */
+    --success-color: #58c0cf;     /* Bleu-vert succès */
+    --danger-color: #fd0d0d;      /* Rouge danger */
+    --black-color: #222831;       /* Noir/gris très foncé */
+    --gray-color: #808080;        /* Gris neutre */
+    --light-gray: #f5f6fa;        /* Gris très clair */
+    --white-color: #FFFFFF;       /* Blanc */
+    --box-shadow: rgb(0 0 2 / 35%) 0px 20px 30px -10px;
+
+}
+  
+html{
+    scroll-behavior: smooth;
+    animation: fadeIn 1s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/* ==========================================================
+                          MENU
+========================================================== */
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.4s;
+    z-index: 100;    
+}
+
+.menu.hide-on-scroll {
+    transform: translateY(-100%);
+    transition: transform 0.4s;
+}
+
+.icones-menu{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 5px;
+    transition: transform 0.4s;
+
+}
+
+.left-side-menu{
+    margin-left: 15px;
+}
+
+.left-side-menu i a{
+    color: var(--white-color);
+    text-decoration: none;
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
+
+.left-side-menu i{
+    margin-right: 10px;
+}
+.left-side-menu i a:hover{
+    color: var(--success-color);
+    transition: ease-in-out 1s;
+    transform: scale(1.05);
+}
+
+.right-side-menu{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.right-side-menu i{
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.right-side-menu i{
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
+
+.right-side-menu i:hover{
+    color: var(--success-color);
+    transition: ease-in-out 1s;
+    transform: scale(1.05);
+}
+
+.main-menu {
+    position: relative;
+    transition: top 0.4s;
+    z-index: 200;
+}
+.main-menu.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.4s;
+    z-index: 200;
+}
+
+
+.main-menu .container-fluid a img{
+    width: 50px;
+}
+.nav-bar-menu-link{
+    transform: translateX(60%);
+}
+
+.nav-button-link{
+    color: var(--black-color);
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
+
+.nav-button-link:hover{
+    color: var(--main-color);
+    transition: ease-in-out 1s;
+    transform: scale(1.05);
+}
+
+.dropdown-link-programs{
+    color: var(--black-color);
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
+
+.dropdown-link-programs:hover{
+    color: var(--main-color);
+    transition: ease-in-out 1s;
+    transform: scale(1.05);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.serach-button{
+    color: var(--white-color);
+    background-color: var(--success-color);
+    cursor: pointer;
+    transition: ease-in-out .5s;
+    border: 1px solid var( --info-color);
+}
+
+.serach-button:hover{
+    color: var(--black-color);
+    background-color: var(--white-color);
+    transition: ease-in-out .5s;
+    transform: scale(1.05);
+}
+
+
+
+
+ /* ==========================================================
+                          FOOTER
+========================================================== */
+footer {
+    background: linear-gradient(45deg, var(--black-color) 0%, #444 50%, var(--main-color) 100%);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: var(--white-color);
+    margin-top: 5%;
+    animation: gradientMove 5s  infinite;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info, .footer-links, .footer-social, .footer-map {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-logo {
+    width: 100px; 
+    height: auto;
+}
+
+.footer-info h2 {
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-links h3, .footer-social h3, .footer-map h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-social li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--white-color); 
+    transition: 1s;
+}
+
+.footer-links a:hover {
+    text-decoration: none;
+    color: var(--main-color); 
+    transition: 1s;
+}
+
+footer .footer-social ul .facebook-link{
+    color: var(--white-color);
+    transition: 1s;
+}
+
+.footer-social ul .facebook-link:hover{
+    color: #1877F2;
+    transition: 1s;
+}
+
+footer .footer-social ul .instagram-link{
+    color: var(--white-color);
+    transition: 1s;
+}
+
+.footer-social ul .instagram-link:hover{
+    color: #E1306C;
+    transition: 1s;
+}
+
+footer .footer-social ul .youtube-link{
+    color: var(--white-color);
+    transition: 1s;
+}
+
+.footer-social ul .youtube-link:hover{
+    color: #FF0000;
+    transition: 1s;
+}
+
+footer .footer-social ul .info-dev-link{
+    color: var(--white-color);
+    transition: 1s;
+}
+
+.footer-social ul .info-dev-link:hover{
+    color: var(--success-color);
+    transition: 1s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-map iframe {
+    width: 100%; 
+    height: 200px; 
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+footer .footer-container .footer-info a{
+    color: var(--success-color);
+    text-decoration: none;
+    transition: 1s;
+}

@@ -1,0 +1,79 @@
+/* This CSS file contain the style applied on the first page of the website */
+body{
+    animation: zoomIn 3s ease;
+    animation-fill-mode: both;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.left-section {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    animation: slideInLeft 3s ease-out;
+    animation-fill-mode: both;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: var(--gray-color);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: ease-in-out 1s;
+}
+
+.btn-custom:hover {
+    transition: ease-in-out 1s;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--second-color);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.right-section{
+    animation: slideInRight 3s ease-out;
+    display: flex;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+

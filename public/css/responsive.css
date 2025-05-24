@@ -1,0 +1,346 @@
+/* This CSS file contain all the responsive style applied on the website */
+@media (max-width: 576px) {
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .icones-menu {
+        display: none;
+    }
+
+    .banner{
+        transform: translateY(30px);
+    }
+
+    .actu-news .title-section{
+        transform: translateY(-50px);
+    }
+
+    .title-section{
+        font-size: 50px;
+    }
+
+    .footer-container .footer-social ul{
+    transform: translateX(-80px);
+  }
+  .footer-container .footer-social ul li{
+    transform: translateX(-80px);
+    font-size: x-large;
+
+  }
+}
+
+
+/* A PROPOS */
+@media (max-width: 576px) {
+    .about, .programs {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #about {
+        margin: 0 5%; /* Réduire la marge pour les écrans moyens */
+    }
+
+    .description-photo {
+        flex-direction: column; /* Passer à une colonne sur les écrans plus petits */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    .description-photo img {
+        width: 80%; /* Ajuster la largeur de l'image */
+        margin-top: 20px; /* Ajouter un peu d'espace au-dessus de l'image */
+    }
+
+    .description-photo .desc {
+        width: 100%; /* Prendre toute la largeur */
+        text-align: center; /* Centrer le texte */
+    }
+
+    .description-photo .desc h2 {
+        margin: 30px 0; /* Ajuster la marge pour le titre */
+    }
+
+    .list-devise {
+        flex-direction: column; /* Passer à une colonne pour les icônes de devise */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    .devise {
+        width: 80%; /* Ajuster la largeur des éléments de devise */
+        margin-bottom: 20px; /* Ajouter un espace entre les éléments */
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        height: auto; /* Permettre à la hauteur de s'ajuster automatiquement */
+    }
+
+    .title-section {
+        font-size: 40px; /* Réduire la taille de la police pour le titre */
+    }
+
+    .sub-title-section {
+        font-size: 30px; /* Réduire la taille de la police pour le sous-titre */
+    }
+
+    .description-photo .desc p {
+        font-size: 18px; /* Réduire la taille de la police pour le texte */
+    }
+
+    .devise p {
+        font-size: 16px; /* Réduire la taille de la police pour les descriptions de devise */
+    }
+}
+
+@media (max-width: 576px) {
+    .title-section {
+        font-size: 30px; /* Réduire encore la taille de la police pour les petits écrans */
+    }
+
+    .sub-title-section {
+        font-size: 24px; /* Réduire la taille de la police pour le sous-titre */
+    }
+
+    .description-photo .desc p {
+        font-size: 16px; /* Ajuster la taille de la police pour le texte */
+    }
+
+    .devise {
+        width: 90%; /* Ajuster la largeur des éléments de devise */
+    }
+}
+
+
+/* PROGRAMS*/
+@media (max-width: 1200px) {
+    .card {
+        max-width: 300px; /* Réduit la largeur maximale des cartes */
+    }
+}
+@media (max-width: 992px) {
+    .card {
+        max-width: 250px; /* Réduit encore la largeur maximale des cartes */
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* Les cartes prennent toute la largeur de leur conteneur */
+        margin-right: 0; /* Supprime la marge droite */
+    }
+    
+    .container-cards {
+        justify-content: center; /* Centre les cartes sur les petits écrans */
+    }
+}
+
+@media (max-width: 576px) {
+    .card .card-body h5 {
+        font-size: 1.5rem; /* Réduit la taille du titre */
+    }
+    .card .card-body .card-text {
+        font-size: 1rem; /* Réduit la taille du texte */
+    }
+    .card .card-body .btn {
+        padding: 10px 20px; /* Réduit le padding du bouton */
+    }
+}
+
+/* COUNTER */
+@media (max-width: 620px) {
+    .container {
+      padding: 60px 6%;
+    }
+  
+    .container .header {
+      padding: 0 0 40px 0;
+    }
+  
+    .counters .counter {
+      width: 45%;
+    }
+}
+  
+@media (max-width: 540px) {
+    .header .title {
+      font-size: 32px;
+    }
+  
+    .header .sub-title {
+      font-size: 36px;
+    }
+  
+    .counters .counter {
+      width: 80%;
+    }
+}
+
+/* ========================================================== */
+/* TESTIMONIALS */
+@media screen and (min-width: 768px){
+    .testi .wrapper{
+        flex-direction: row;
+        padding: 30px 100px;
+    }
+
+    .testi .thumbnail{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+/* FOOTER */
+@media screen and (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-info, .footer-links, .footer-social, .footer-map {
+      flex: none;
+      width: 100%;
+      max-width: 400px;
+      margin: 10px 0;
+    }
+
+    .footer-social ul {
+      transform: translateX(0);
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .footer-map iframe {
+      width: 100%;
+      height: 250px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    footer {
+      padding: 15px;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-social ul li{
+      transform: translateX(-80px);
+    }
+
+    .footer-bottom {
+      font-size: 0.8em;
+    }
+  }
+
+
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .footer-container {
+        flex-direction: column; /* Passer à une colonne sur les écrans plus petits */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    .footer-info, .footer-links, .footer-social, .footer-map {
+        flex: 1 1 100%; /* Chaque section prend toute la largeur */
+        text-align: center; /* Centrer le texte */
+    }
+
+    .footer-map iframe {
+        height: 150px; /* Ajuster la hauteur de la carte */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-info h2 {
+        font-size: 1.5rem; /* Réduire la taille de la police pour le titre */
+    }
+
+    .footer-info p {
+        font-size: 0.9rem; /* Réduire la taille de la police pour le texte */
+    }
+
+    .footer-links h3, .footer-social h3, .footer-map h3 {
+        font-size: 1.2rem; /* Réduire la taille de la police pour les sous-titres */
+    }
+
+    .footer-links li, .footer-social li {
+        font-size: 0.9rem; /* Réduire la taille de la police pour les liens */
+    }
+
+    .footer-bottom {
+        font-size: 0.8em; /* Réduire la taille de la police pour le bas du footer */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-info h2 {
+        font-size: 1.2rem; /* Réduire encore la taille de la police pour le titre */
+    }
+
+    .footer-info p {
+        font-size: 0.8rem; /* Réduire la taille de la police pour le texte */
+    }
+
+    .footer-links h3, .footer-social h3, .footer-map h3 {
+        font-size: 1rem; /* Réduire la taille de la police pour les sous-titres */
+    }
+
+    .footer-links li, .footer-social li {
+        font-size: 0.8rem; /* Réduire la taille de la police pour les liens */
+    }
+
+    .footer-map iframe {
+        height: 120px; /* Ajuster la hauteur de la carte pour les petits écrans */
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .banner{
+    transform: translateY(-5px);
+  }
+
+  .actu-news .title-section{
+    transform: translateY(-50px);
+  }
+
+  .footer-container .footer-info h2{
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .footer-container .footer-info p{
+    font-size: x-large;
+  }
+
+  .footer-container .footer-social ul{
+    transform: translateX(-80px);
+  }
+  .footer-container .footer-social ul li{
+    transform: translateX(-80px);
+    font-size: x-large;
+
+  }
+
+}
+
+
+/* 
+#########################################################################################
+                      Responsive for about page
+#########################################################################################
+ */
