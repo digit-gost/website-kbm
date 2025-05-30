@@ -12,3 +12,9 @@ window.addEventListener('scroll', function() {
     }
     lastScroll = currentScroll;
 });
+
+// Initialize Bootstrap tooltips
+const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})

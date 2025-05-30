@@ -33,6 +33,12 @@
   }
 }
 
+@media (max-width: 576px) {
+  .navbar-nav {
+    justify-content: center !important;
+  }
+}
+
 
 /* A PROPOS */
 @media (max-width: 576px) {
@@ -387,4 +393,23 @@
     height: auto;
     border-radius: 8px;
   }
+}
+
+
+@media (max-width: 576px) {
+  h1.first-text-about{
+    font-size: 2rem; 
+  }
+}
+
+@media (max-width: 600px) {
+    .team-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .card-team-container {
+        width: 95vw;
+        padding: 1rem 0.5rem;
+    }
 }

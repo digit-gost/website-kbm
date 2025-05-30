@@ -123,20 +123,34 @@ html{
 .main-menu .container-fluid a img{
     width: 50px;
 }
-.nav-bar-menu-link{
-    transform: translateX(60%);
+
+.nav-bar-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.nav-button-link{
+.nav-bar-item-link{
     color: var(--black-color);
+    text-decoration: none;
+    font-size: 1.1em;
     transition: ease-in-out 1s;
-    cursor: pointer;
 }
 
-.nav-button-link:hover{
+.nav-bar-item-link:hover{
     color: var(--main-color);
     transition: ease-in-out 1s;
     transform: scale(1.05);
+}
+
+.btn-log-in{
+    transform: translateY(-25%);
+    margin-right: 15px;
+}
+
+.div-btn {
+    gap: 50px;
 }
 
 .dropdown-link-programs{
@@ -148,26 +162,10 @@ html{
 .dropdown-link-programs:hover{
     color: var(--main-color);
     transition: ease-in-out 1s;
-    transform: scale(1.05);
+    transform: scale(1);
     text-decoration: underline;
     text-transform: uppercase;
 }
-
-.serach-button{
-    color: var(--white-color);
-    background-color: var(--success-color);
-    cursor: pointer;
-    transition: ease-in-out .5s;
-    border: 1px solid var( --info-color);
-}
-
-.serach-button:hover{
-    color: var(--black-color);
-    background-color: var(--white-color);
-    transition: ease-in-out .5s;
-    transform: scale(1.05);
-}
-
 
 
 
