@@ -344,3 +344,47 @@
                       Responsive for about page
 #########################################################################################
  */
+
+ @media (max-width: 768px) {
+  .container-text-image {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .container-text-image .container-image,
+  .container-text-image .container-text {
+    width: 100%;
+  }
+  .container-text-image .container-image {
+    margin-bottom: 1rem;
+  }
+
+  .container-text-image .container-image img{
+      transform: translateY(0px);
+
+  }
+}
+
+
+/* ========================================================================== */
+@media (max-width: 768px) {
+  .container-text-image-mission {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .container-text-image-mission .container-image-mission,
+  .container-text-image-mission .container-text-mission {
+    width: 100%;
+  }
+  .container-image-mission {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-image-mission img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}

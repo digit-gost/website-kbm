@@ -13,7 +13,7 @@
     top: 0; left: 0;
     width: 100%; 
     height: 80%;
-    background-color: rgba(0, 0, 30, 0.6); /* Overlay sombre */
+    background-color: rgb(6, 108, 67); /* Overlay sombre */
     z-index: 1;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .banner-content span {
-    color: #f0b23b;
+    color: var(--success-color);
 }
 
 /* Responsive */
@@ -73,29 +73,37 @@
     margin-bottom: 30px;
 }
 
+/* ========================================================================== */
 .container-text-image {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 4px;
-    grid-row-gap: 0px;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 50px;
 }
 
-.container-text { grid-area: 1 / 1 / 2 / 2; }
-.container-image { grid-area: 1 / 2 / 2 / 3; }
-
-.container-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.container-text-image .container-text {
+  flex: 1;
 }
 
-.presentation-container-2{
-    margin-top: 50px;
+.container-text-image .container-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  height: 500px;
+  
 }
 
+.container-text-image .container-image img {
+  transform: translateY(60px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
-
+/* ========================================================================== */
 .container-text-image-mission {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -115,6 +123,7 @@
 }
 
 
+/* ========================================================================== */
 .presentation-container-1 .container-text-image .container-text{
     border: 1px solid var(--white-color);
     border-radius: 10px;
@@ -137,6 +146,7 @@
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 1.5px 4px 0 var(--main-color);    padding: 40px;
 }
 
+/* ========================================================================== */
 .container-counters-statistics {
     width: 100%;
     min-height: 50vh;
@@ -221,8 +231,7 @@
 }
 
 
-
-
+/* ========================================================================== */
 .directrice-message {
     background-color: #fff;
     border-radius: 1rem;
