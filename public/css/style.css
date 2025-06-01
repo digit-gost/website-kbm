@@ -21,6 +21,7 @@
 html{
     scroll-behavior: smooth;
     animation: fadeIn 1s;
+
 }
 
 *{
@@ -32,6 +33,21 @@ html{
     font-weight: weight;
     font-style: normal;
     text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--success-color); /* Couleur du curseur */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--success-color); /* Couleur du curseur */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--success-color); /* Couleur du curseur */
+  transition: background-color 0.3s ease;
 }
 
 
