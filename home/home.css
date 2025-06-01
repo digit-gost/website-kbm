@@ -579,3 +579,20 @@ img {
   margin-top: 30px;
   font-size: 25px;
 }
+
+/* ==========================================================
+                          RESPOSNIVE
+========================================================== */
+@media (min-width: 1024px){
+    .banner {
+        transform: translateY(6%);
+    }
+
+    .about {
+        min-height: 0vh;
+    }
+
+    .container-counters-statistics{
+        transform: translateY(80px);
+    }
+}

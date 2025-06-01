@@ -1,4 +1,6 @@
 /* This CSS file contain all the responsive style applied on the website */
+
+
 @media (max-width: 576px) {
     .banner h1 {
         font-size: 1.8rem;
