@@ -1,0 +1,123 @@
+/* 
+#########################################################################################
+                      Responsive for about page
+#########################################################################################
+ */
+@media (max-width: 768px) {
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content p {
+    font-size: 1.1rem;
+  }
+
+  .presentation-container-1{
+    transform: translateY(-100px);
+  }
+
+  .presentation-container-2{
+    transform: translateY(-100px);
+  }
+
+  .presentation-container-3{
+    transform: translateY(-100px);
+  }
+
+  .presentation-container-4{
+    transform: translateY(-100px);
+  }
+
+  .presentation-container-5{
+    transform: translateY(-70px);
+  }
+
+  .presentation-container-6{
+    transform: translateY(-50px);
+  }
+
+  .presentation-container-7{
+    transform: translateY(-50px);
+  }
+}
+
+
+/* ========================================================================== */
+ @media (max-width: 768px) {
+  .container-text-image {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .container-text-image .container-image,
+  .container-text-image .container-text {
+    width: 100%;
+  }
+  .container-text-image .container-image {
+    margin-bottom: 1rem;
+  }
+
+  .container-text-image .container-image img{
+      transform: translateY(0px);
+
+  }
+}
+
+
+/* ========================================================================== */
+@media (max-width: 768px) {
+  .container-text-image-mission {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .container-text-image-mission .container-image-mission,
+  .container-text-image-mission .container-text-mission {
+    width: 100%;
+  }
+  .container-image-mission {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-image-mission img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  h1.first-text-about{
+    font-size: 2rem; 
+  }
+}
+
+@media (max-width: 600px) {
+  .team-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .card-team-container {
+    width: 95vw;
+    padding: 1rem 0.5rem;
+  }
+}
+
+
+/* ========================================================================== */
+@media (min-width: 1024px){
+  .banner::before{
+    transform: translateY(-11px);
+  }
+
+  .container-text-image .container-image img{
+    transform: translateY(6px);
+  }
+
+  .container-counters-statistics{
+    transform: translateY(100px);
+  }
+}

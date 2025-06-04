@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="apple-touch-icon" sizes="180x180" href="../public/assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../public/assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../public/assets/favicon_io/site.webmanifest">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>GSKBM | Prescolaire</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- Link for bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Link for main style css -->
+        <link rel="stylesheet" href="../public/css/style.css">
+        <!-- Link for home css page -->
+        <link rel="stylesheet" href="../programs/prescolaire.css">
+        <!-- link for responsive style -->
+        <link rel="stylesheet" href="../programs/programs-responsive.css"> 
+    </head>
+    <body>
+        <!-- SECTION MENU -->
+        <section class="menu">
+            <!-- Icones menu -->
+            <div class="icones-menu">
+                <!-- left-side-menu -->
+                <div class="left-side-menu">
+                    <i class="bi bi-map-fill">&nbsp;&nbsp;<a href="#">Touba, Darou Marnane</a></i>
+                    <i class="bi bi-telephone-fill">&nbsp;&nbsp;<a href="#">+221 77 123 45 67</a></i>
+                    <i class="bi bi-envelope-fill">&nbsp;&nbsp;<a href="#">gskbadiane@gmail.com</a></i>
+                </div>
+
+                <!-- right-side-menu -->
+                <div class="right-side-menu">
+                    <i class="bi bi-facebook"><a href="#"></a></i>
+                    <i class="bi bi-instagram"><a href="#"></a></i>
+                    <i class="bi bi-twitter"><a href="#"></a></i>
+                </div>
+            </div>
+
+            <!-- Main menu -->
+            <div class="main-menu">
+                <nav class="navbar navbar-expand-md bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../home/home.html">
+                            <img src="../public/assets/images/logo.jpeg" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Groupe Scolaire Keur Badiane Maï</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav nav-bar-links justify-content-end flex-grow-1 pe-3 justify-content-center text-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-bar-item-link" aria-current="page" href="#">Accueil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-bar-item-link" href="../about/about.html" target="_blank">À propos</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link nav-bar-item-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Nos Programmes
+                                        </a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/prescolaire.html">Prescolaire</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/elementaire.html">Élémentaire</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/college.html">Collège</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/lycee.html">Lycée</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/madjliss.html">Madjliss</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/daara.html">Daara</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="mt-3 div-btn" tabindex="0" data-bs-toggle="popover">
+                                    <button class="btn btn-secondary btn-log-in" id="btn-connexion">Connexion</button>
+                                    <button type="button" class="btn btn-outline-info btn-log-in">Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- School of Low Programme -->         
+        <div class="container">
+            <p class="title-section-programs">
+                La School of Low
+            </p>
+
+            <div class="sol-img-text">
+                <div class="sol-text">
+                    <p>Dans un monde professionnel en constante évolution, le juriste moderne doit désormais étoffer sa palette d’outils pour s’établir en partenaire d’affaire à forte valeur ajoutée.</p>
+                    <p>Dans notre vision, nous accordons une place importante à la formation initiale et continue ainsi qu’aux formations en alternance dans l’ensemble des filières proposées afin de permettre une meilleure insertion professionnelle des étudiants incités à effectuer des stages, quel que soit leur niveau d’études.</p>
+                    <p>L’offre de formation est diversifiée et témoigné surtout des liens privilégiés que le Groupe Supdeco entretient avec le monde socio-économique tant dans le secteur privé que dans le secteur public.</p>
+                    <p>Faire le choix d’étudier le droit à Supdeco Dakar, c’est s’engager sur un chemin exigeant et épanouissant.</p>
+                </div>
+
+                <div class="sol-img">
+                    <img src="../public/images/schooloflow/sol.jpg" alt="..">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="list-programs container">
+            <div class="container1">
+                <div class="master-container">BACHELORS <button class="toggle-button">+</button></div>
+                <div class="master-items">
+                    <div class="master-item">
+                        <div class="master-title">Licence professionnelle métiers du notariat <button class="toggle-button">+</button></div>
+                        <div class="master-details">
+                            <div class="container mt-4">
+                                <!-- Onglets -->
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#presentation">Présentation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#programme">Programme</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#admission">Admission</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#debouches">Débouchés</a>
+                                    </li>
+                                </ul>
+                            
+                                <!-- Contenu des onglets -->
+                                <div class="tab-content mt-3">
+                                    <!-- Présentation -->
+                                    <div id="presentation" class="tab-pane fade show active">
+                                        <button class="btn btn-primary">Je télécharge la brochure</button>
+                                        <button class="btn btn-primary">Je candidate à ce programme</button>
+                                        <p class="mt-3" style="text-align: justify;">
+                                            La licence professionnelle “Métiers du notariat” poursuit un double objectif : procurer une solide formation juridique dans les matières du notariat et apporter aux étudiants un volet pratique leur permettant de s’intégrer rapidement dans une étude notariale.
+                                        </p>
+                                    </div>
+                            
+                                    <!-- Programme -->
+                                    <div id="programme" class="tab-pane fade">
+                                        <h4>Nos Programmes</h4>
+                                        <ul>
+                                            <li>Droit des contrats</li>
+                                            <li>Projet tuteuré</li>
+                                            <li>Droit fondamental</li>
+                                            <li>Langues et Communication</li>
+                                            <li>Technique de communication 1</li>
+                                            <li>Anglais des affaires</li>
+                                            <li>Management</li>
+                                            <li>Droit patrimonial de la famille</li>
+                                            <li>Gestion de l’entreprise</li>
+                                            <li>Droit immobilier</li>
+                                            <li>Applications numériques</li>
+                                            <li>Développement personnel et professionnel</li>
+                                            <li>Développement personnel et environnement de l’entreprise</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Admission -->
+                                    <div id="admission" class="tab-pane fade">
+                                        <h4>Conditions d'admission</h4>
+                                        <ol>
+                                            <li>1ère année : titulaires du baccalauréat ou d’un titre admis en équivalence</li>
+                                            <li>Étude de dossier, tests et entretien</li>
+                                        </ol><br>
+                                        <ol>
+                                            <h4>Admissions parallèles</h4>
+                                            <li>2ème année : titulaires d’un Bac +1 en informatique ou équivalent.</li>
+                                            <li>3ème année : titulaires d’un Bac +2 en informatique ou équivalent.</li>
+                                            <li>Étude de dossier, tests et entretien</li>
+                                        </ol>
+                                    </div>
+                            
+                                    <!-- Débouchés -->
+                                    <div id="debouches" class="tab-pane fade">
+                                        <h4>Débouchés</h4>
+                                        <p>
+                                        <ul type="cicle">
+                                            <li>Clerc de notaire</li>
+                                            <li>Rédacteur d’acte</li>
+                                            <li>Conseiller clientèle dans les banques et compagnies d’assurance</li>
+                                            <li>Métier de la négociation ou de l’administration de biens</li>
+                                            <li>Services de l’urbanisme et des collectivités etc (acte de vente, déclaration propriété etc).</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="master-item">
+                        <div class="master-title">Licence professionnelle en droit des affaires <button class="toggle-button">+</button></div>
+                        <div class="master-details">
+                            <div class="container mt-4">
+                                <!-- Onglets -->
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#resentation">Présentation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#rogramme">Programme</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#dmission">Admission</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#ebouches">Débouchés</a>
+                                    </li>
+                                </ul>
+                            
+                                <!-- Contenu des onglets -->
+                                <div class="tab-content mt-3">
+                                    <!-- Présentation -->
+                                    <div id="resentation" class="tab-pane fade show active">
+                                        <button class="btn btn-primary">Je télécharge la brochure</button>
+                                        <button class="btn btn-primary">Je candidate à ce programme</button>
+                                        <p class="mt-3" style="text-align: justify;">
+                                            La Licence en Droit des Affaires est une formation transversale qui répond à un besoin croissant exprimé par les professionnels du droit (avocats, notaires, huissiers, avoués etc.). Nos diplômés intègrent aisément les banques et les assurances.                                        </p>
+                                    </div>
+                            
+                                    <!-- Programme -->
+                                    <div id="rogramme" class="tab-pane fade">
+                                        <h4>Nos Programmes</h4>
+                                        <ul>
+                                            <li>Droit fondamental</li>
+                                            <li>Langues et Communication</li>
+                                            <li>Technique de communication 1</li>
+                                            <li>Anglais des affaires</li>
+                                            <li>Management</li>
+                                            <li>Gestion de l’entreprise</li>
+                                            <li>Applications numériques</li>
+                                            <li>Développement personnel et professionnel</li>
+                                            <li>Droit civil (personnes et famille)</li>
+                                            <li>Droit international</li>
+                                            <li>Organisation juridictionnelle</li>
+                                            <li>Institutions politiques</li>
+                                            <li>Connaissance du monde contemporain</li>
+                                            <li>Développement personnel et environnement de l’entreprise</li>
+                                            <li>Droit des obligations</li>
+                                            <li>Droit pénal général</li>
+                                            <li>Droit des biens</li>
+                                            <li>Droit du travail</li>
+                                            <li>Responsabilité civile</li>
+                                            <li>Procédure pénale</li>
+                                            <li>Droit administratif</li>
+                                            <li>Finances publiques</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Admission -->
+                                    <div id="dmission" class="tab-pane fade">
+                                        <h4>Conditions d'admission</h4>
+                                        <ol>
+                                            <li>1ère année : titulaires du baccalauréat ou d’un titre admis en équivalence</li>
+                                            <li>Étude de dossier, tests et entretien</li>
+
+                                            <h4>Admissions parallèles</h4>
+                                            <ul>
+                                                <li>2ème année : titulaires d’un Bac +1 en informatique ou équivalent.</li>
+                                                <li>3ème année : titulaires d’un Bac +2 en informatique ou équivalent.</li>
+                                            </ul>
+                                        </ol>
+                                    </div>
+                            
+                                    <!-- Débouchés -->
+                                    <div id="ebouches" class="tab-pane fade">
+                                        <h4>Débouchés</h4>
+                                        <p>
+                                            <h5>
+                                                Option Ingénierie des données et Intelligence Artificielle (IDIA)
+                                            </h5>
+                                            <ul type="cicle">
+                                                <li>Responsable département juridique en entreprise</li>
+                                                <li>Collaborateur dans les cabinets de notariat, cabinets d’avocats, cabinets conseils juridique et fiscale</li>
+                                                <li>Gestionnaire de patrimoine</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="master-item">
+                        <div class="master-title">Licence professionnelle droit social et ressources humaines <button class="toggle-button">+</button></div>
+                        <div class="master-details">
+                            <div class="container mt-4">
+                                <!-- Onglets -->
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#esentation">Présentation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#ogramme">Programme</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#mission">Admission</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#bouches">Débouchés</a>
+                                    </li>
+                                </ul>
+                            
+                                <!-- Contenu des onglets -->
+                                <div class="tab-content mt-3">
+                                    <!-- Présentation -->
+                                    <div id="esentation" class="tab-pane fade show active">
+                                        <button class="btn btn-primary">Je télécharge la brochure</button>
+                                        <button class="btn btn-primary">Je candidate à ce programme</button>
+                                        <p class="mt-3" style="text-align: justify;">
+                                            Les postes en GRH, en plus des connaissances managériales, exigent désormais une connaissance approfondie en droit social (droit du travail et de la sécurité sociale). Cette formation vous donne les outils et aptitudes nécessaires pour intégrer le monde professionnel.
+                                        </p>
+                                    </div>
+                            
+                                    <!-- Programme -->
+                                    <div id="ogramme" class="tab-pane fade">
+                                        <h4>Nos Programmes</h4>
+                                        <ul>
+                                            <li>Droit du travail</li>
+                                            <li>Droit de la sécurité sociale</li>
+                                            <li>Gestion des relations sociales</li>
+                                            <li>Processus de recrutement</li>
+                                            <li>Développement personnel et environnement de l’entreprise</li>
+                                            <li>Langues et communication</li>
+                                            <li>Gestion des entreprises</li>
+                                            <li>Contentieux du droit social</li>
+                                            <li>Gestion administrative des RH</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Admission -->
+                                    <div id="mission" class="tab-pane fade">
+                                        <h4>Conditions d'admission</h4>
+                                        <ol>
+                                            <li>1ère année : titulaires du baccalauréat ou d’un titre admis en équivalence</li>
+                                            <li>Étude de dossier, tests et entretien</li>
+                                        </ol>
+
+                                        <h4>Admissions Parallèles</h4>
+                                        <ol>
+                                            <li>2ème année : titulaires d’un Bac +1 en informatique  ou équivalent.</li>
+                                            <li>3ème année : titulaires d’un Bac +2 en informatique  ou équivalent.</li>
+                                            <li>Étude de dossier, tests et entretien</li>
+                                        </ol>
+                                    </div>
+                            
+                                    <!-- Débouchés -->
+                                    <div id="bouches" class="tab-pane fade">
+                                        <h4>Débouchés</h4>
+                                        <p>
+                                            <h5>
+                                                Option Ingénierie des données et Intelligence Artificielle (IDIA)
+                                            </h5>
+                                            <ul type="cicle">
+                                                <li>Gestionnaire administratif</li>
+                                                <li>Assistant ou Chargé de recrutement</li>
+                                                <li>Gestionnaire de carrière</li>
+                                                <li>Collaborateur gestion administrative</li>
+                                                <li>Assistant gestion du personnel</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container1">
+                <div class="master-container">MASTERS <button class="toggle-button">+</button></div>
+                <div class="master-items">
+                    <div class="master-item">
+                        <div class="master-title">Master professionnel droit des affaires et fiscalité <button class="toggle-button">+</button></div>
+                        <div class="master-details">
+                            <div class="container mt-4">
+                                <!-- Onglets -->
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#presentation-master-sol-true">Présentation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#programme-master-sol-true">Programme</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#admission-master-sol-true">Admission</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#debouches-master-sol-true">Débouchés</a>
+                                    </li>
+                                </ul>
+                            
+                                <!-- Contenu des onglets -->
+                                <div class="tab-content mt-3">
+                                    <!-- Présentation -->
+                                    <div id="presentation-master-sol-true" class="tab-pane fade show active">
+                                        <button class="btn btn-primary">Je télécharge la brochure</button>
+                                        <button class="btn btn-primary">Je candidate à ce programme</button>
+                                        <p class="mt-3" style="text-align: justify;">
+                                            Dans le prolongement de la licence professionnelle en droit des affaires et fiscalité, ce programme s’inscrit dans une logique de mieux former les juristes en droit des affaires, plus spécialement en droit bancaire et financier mais également en ingénierie sociétaire.
+                                        </p>
+                                        <p class="mt-3" style="text-align: justify;">
+                                            L’objectif de cette formation est de préparer les étudiants au traitement pratique de tous les aspects juridiques, fiscaux, sociaux et comptables d’une entreprise : contraintes ou incitations fiscales, rédaction de contrats, analyse de documents comptables, pratique des principaux mécanismes sociétaires, contentieux d’affaires.
+                                        </p>
+                                    </div>
+                            
+                                    <!-- Programme -->
+                                    <div id="programme-master-sol-true" class="tab-pane fade">
+                                        <h4>Nos Programmes</h4>
+                                        <ul>
+                                            <li>Fiscalité approfondie</li>
+                                            <li>Droit social approfondi</li>
+                                            <li>Droit des sociétés approfondi</li>
+                                            <li>Fiscalité Internationale</li>
+                                            <li>Maîtrise Langue étrangère</li>
+                                            <li>Droit fiscal</li>
+                                            <li>Droit des sociétés</li>
+                                            <li>Analyse comptable et financière</li>
+                                            <li>Finance</li>
+                                            <li>Gestion d’entreprise</li>
+                                            <li>Anglais des Affaires</li>
+                                            <li>Conférences</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Admission -->
+                                    <div id="admission-master-sol-true" class="tab-pane fade">
+                                        <h4>Conditions d'admission</h4>
+                                        <ol>
+                                            <li>Être titulaire d’un Bac Scientifique</li>
+                                            <li>Déposer un dossier complet</li>
+                                            <li>Passer le concours d’entrée</li>
+                                            <li>Entretien</li>
+                                        </ol>
+                                    </div>
+                            
+                                    <!-- Débouchés -->
+                                    <div id="debouches-master-sol-true" class="tab-pane fade">
+                                        <h4>Débouchés</h4>
+                                        <p>
+                                            <h5>
+                                                Professionnels et étudiants titulaires :
+                                            </h5>
+                                            <ul type="cicle">
+                                                <li>d’un Bac + 3 pour le Master 1</li>
+                                                <li>d’un Bac + 4 pour le Master 2 en gestion</li>
+                                            </ul>
+                                            <p>L’admission se fait sur entretien après dépôt et évaluation d’un dossier composé :</p>
+                                            <li>de l’attestation ou du diplôme de Bac</li>
+                                            <li>des relevés de notes et de l’attestation de la licence d’une photo</li>
+                                            <li>de la copie d’une pièce d’identité ou d’un extrait de naissance</li>
+                                            <li>d’une attestation de travail ou de stage (pour les professionnels)</li>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+
+        <script src="../programs/script.js"></script>
+    </body>
+</html>
