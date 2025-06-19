@@ -199,6 +199,7 @@ animation: slideInRight 5s cubic-bezier(0.4, 0, 0.2, 1); /* 1.5s = durée plus l
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    transform: translateY(-100px);
 }
   
 .counters .counter {
@@ -413,3 +414,35 @@ animation: slideInRight 5s cubic-bezier(0.4, 0, 0.2, 1); /* 1.5s = durée plus l
     margin-bottom: 50px;
 }
 
+
+
+/* ========================================================================== */
+.button-see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-see-more{
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+    text-align: center;
+}
+
+.button-see-more, .btn-see-more a{
+    color: var(--white-color);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-see-more:hover {
+    background-color: var(--second-color);
+    transform: scale(1.05);
+    letter-spacing: 2px;
+    transition: 1s ease-in-out;
+}

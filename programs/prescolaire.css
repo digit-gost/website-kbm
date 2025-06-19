@@ -1,43 +1,61 @@
 .title-section-programs{
-    margin-top: 12%;
-    margin-bottom: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 55px;
-    color: var(--main-color);
+  margin-top: 12%;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 55px;
+  color: var(--main-color);
 }
 
-.sol-img-text {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
-    transform: translateY();
+.prescolaire-img-text {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  transform: translateY();
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
-.sol-text { 
-    grid-area: 1 / 1 / 2 / 2; 
+.prescolaire-text { 
+  grid-area: 1 / 1 / 2 / 2; 
+  flex: 1 1 300px;
+  min-width: 250px;
+  font-size: 1.1rem;
 }
 
-.sol-img { 
-    grid-area: 1 / 2 / 2 / 3; 
+.prescolaire-img { 
+  grid-area: 1 / 2 / 2 / 3; 
+  flex: 1 1 300px;
+  min-width: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.sol-text p {
-    text-align: justify;
-    font-size: 19px;
+.prescolaire-img img{
+  width: 100%;
+  height: auto;
+  transform: translateY(-80px);
 }
 
-.sol-img{
-    margin-top: 10%;
+
+.prescolaire-text p {
+  text-align: justify;
+  font-size: 19px;
 }
 
-.sol-programme{
-    margin-top: 5%;
-    padding-bottom: 5%;
-    width: 100%;
+.prescolaire-img{
+  margin-top: 10%;
+}
+
+.prescolaire-programme{
+  margin-top: 5%;
+  padding-bottom: 5%;
+  width: 100%;
 }
 
 
@@ -72,7 +90,8 @@
 .master-container:hover { 
   background-color: var(--white-color); 
   color: var(--black-color);
-  transform: scale(1.02); 
+  transform: scale(1.02);
+  border: 1px solid var(--main-color);
 }
 
 .master-items { 
@@ -104,6 +123,8 @@
   align-items: center; 
   cursor: pointer; 
   background-color: var(--second-color);
+  font-weight: bold;
+  font-size: large;
 }
 
 /* toggle button plus //"minus"\\ */
@@ -129,4 +150,38 @@
 
 .active .master-details { 
   max-height: 500px; opacity: 1; 
+}
+
+
+/* Responsive : empilez sur petits écrans */
+@media (max-width: 768px) {
+  .prescolaire-img-text {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .prescolaire-img,
+  .prescolaire-text {
+    min-width: 0;
+    width: 100%;
+  }
+  .prescolaire-img img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .prescolaire-img-text {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .prescolaire-img,
+  .prescolaire-text {
+    min-width: 0;
+    width: 100%;
+  }
+  .prescolaire-img img{
+    width: 100%;
+    height: auto;
+  }
 }

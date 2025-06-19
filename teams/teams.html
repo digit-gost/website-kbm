@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="apple-touch-icon" sizes="180x180" href="../public/assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../public/assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../public/assets/favicon_io/site.webmanifest">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>GSKBM | Notre Equipe</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- Link for bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Link for font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+        <!-- Link for main style css -->
+        <link rel="stylesheet" href="../public/css/style.css">
+        <!-- Link for about css page -->
+        <link rel="stylesheet" href="../teams/teams.css">
+        <!-- link for responsive style -->
+        <link rel="stylesheet" href="../public/css/responsive.css"> 
+        <!-- link for responsive style -->
+        <link rel="stylesheet" href="../teams/teams-responsive.css"> 
+    </head>
+    <body>
+        <!-- SECTION MENU -->
+        <section class="menu">
+            <!-- Icones menu -->
+            <div class="icones-menu">
+                <!-- left-side-menu -->
+                <div class="left-side-menu">
+                    <i class="bi bi-map-fill">&nbsp;&nbsp;<a href="#">Touba, Darou Marnane</a></i>
+                    <i class="bi bi-telephone-fill">&nbsp;&nbsp;<a href="#">+221 77 123 45 67</a></i>
+                    <i class="bi bi-envelope-fill">&nbsp;&nbsp;<a href="#">gskbadiane@gmail.com</a></i>
+                </div>
+
+                <!-- right-side-menu -->
+                <div class="right-side-menu">
+                    <i class="bi bi-facebook"><a href="#"></a></i>
+                    <i class="bi bi-instagram"><a href="#"></a></i>
+                    <i class="bi bi-twitter"><a href="#"></a></i>
+                </div>
+            </div>
+
+            <!-- Main menu -->
+            <div class="main-menu">
+                <nav class="navbar navbar-expand-md bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../home/home.html">
+                            <img src="../public/assets/images/logo.jpeg" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Groupe Scolaire Keur Badiane Maï</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav nav-bar-links justify-content-end flex-grow-1 pe-3 justify-content-center text-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-bar-item-link" aria-current="page" href="../home/home.html">Accueil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-bar-item-link" href="#">À propos</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link nav-bar-item-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Nos Programmes
+                                        </a>
+                                        <ul class="dropdown-menu ">
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/prescolaire.html">Prescolaire</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/elementaire.html">Élémentaire</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/college.html">Collège</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/lycee.html">Lycée</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/madjliss.html">Madjliss</a></li>
+                                            <li><a class="dropdown-item dropdown-link-programs" href="../programs/daara.html">Daara</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-bar-item-link" href="#">Notre Equipe</a>
+                                    </li>
+                                </ul>
+                                <div class="mt-3 div-btn" tabindex="0" data-bs-toggle="popover">
+                                    <button class="btn btn-secondary btn-log-in" id="btn-connexion">Connexion</button>
+                                    <button type="button" class="btn btn-outline-info btn-log-in btn-infos-dev">
+                                        <a href="../infos-dev/infos-dev.html">Infos Dev</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- SECTION TEAM -->
+        <div class="container">
+            <h2>Notre équipe</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni.</p>
+
+            <div class="tabs">
+                <button class="tab-btn active">Administration</button>
+                <button class="tab-btn">Enseignants</button>
+                <button class="tab-btn">Professeurs</button>
+            </div>
+
+            <div class="team-wrapper">
+                <!-- Administration -->
+                <div class="team active">
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arthur Melo" />
+                        <h4>Arthur Melo</h4>
+                        <span>Design Director</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enseignants -->
+                <div class="team">
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Pamela Anderson" />
+                        <h4>Pamela Anderson</h4>
+                        <span>Lead Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professeurs -->
+                <div class="team">
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                    <div class="member">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="John Doe" />
+                        <h4>John Doe</h4>
+                        <span>Full Stack Developer</span>
+                        <div class="icons">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h2>Groupe Scolaire Keur Badiane Maï</h2>
+                    <p>Première Business School du Sénégal</p>
+                    <p><strong>Contactez-nous :</strong></p>
+                    <p>Téléphone : +221 77 777 77 77</p>
+                    <p>Email : <a href="mailto:gskbm@gmail.com">gskbm@gmail.com</a></p>
+                    <p>Adresse : Darou Marnane, Touba, Sénégal</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="../home/home.html#programs">Programmes</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#galerie" target="_blank">Galerie Photo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Suivez-nous sur les réseaux sociaux</h3>
+                    <ul style="font-size: x-large; transform: translateX(80px);">
+                        <li><a href="https://www.facebook.com/"><i class="bi bi-facebook facebook-link"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="bi bi-instagram instagram-link"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="bi bi-youtube youtube-link"></i></a></li>
+                        <li><a href="infos-dev/info-dev.html" target="_blank"><i class="bi bi-info-square-fill info-dev-link"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-map">
+                    <h3>Localisation</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509485!2d144.9537353153188!3d-37.81627997975184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11c4b7%3A0x5045675218ceed5e!2sYour%20Location%20Here!5e0!3m2!1sen!2sus!4v1610000000000" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Mentions légales | Politique de confidentialité | Conditions d'utilisation</p>
+            </div>
+        </footer>
+
+        <script src="../teams/teams.js"></script>
+        <script >
+            document.getElementById('btn-connexion').addEventListener('click', function() {
+                alert('Connexion indisponible pour le moment.');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+@media (max-width: 575.98px) {
+    .container{
+        margin-top: 50px;
+    }
+
+    .tab-btn{
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+    footer{
+        transform: translateY(550%);
+    }
+}
+

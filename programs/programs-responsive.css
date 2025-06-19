@@ -1,0 +1,27 @@
+/* Téléphones (petits appareils) */
+@media (max-width: 575.98px) { 
+    .title-section-programs{
+        margin-top: 30%;
+        font-size: 45px;
+    }
+
+    .college-img img, .daara-img img, .elementaire-img img, .madjliss-img img, .lycee-img img, .prescolaire-img img {
+        transform: translateY(-50px);
+    }
+
+    .list-programs{
+        transform: translateY(-60px);
+    }
+}
+
+/* Tablettes (appareils moyens) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .title-section-programs{
+        margin-top: 20%;
+    }
+}
+
+/* Ordinateurs (grands écrans) */
+@media (min-width: 992px) {
+  /* Styles pour desktop */
+}

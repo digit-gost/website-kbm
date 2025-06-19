@@ -21,8 +21,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
         <!-- Link for main style css -->
         <link rel="stylesheet" href="../public/css/style.css">
-        <!-- Link for home css page -->
+        <!-- Link for program css page -->
         <link rel="stylesheet" href="../programs/prescolaire.css">
+        <!-- link for responsive style -->
+        <link rel="stylesheet" href="../public/css/responsive.css"> 
         <!-- link for responsive style -->
         <link rel="stylesheet" href="../programs/programs-responsive.css"> 
     </head>
@@ -68,7 +70,7 @@
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav nav-bar-links justify-content-end flex-grow-1 pe-3 justify-content-center text-center">
                                     <li class="nav-item">
-                                        <a class="nav-link nav-bar-item-link" aria-current="page" href="#">Accueil</a>
+                                        <a class="nav-link nav-bar-item-link" aria-current="page" href="../home/home.html">Accueil</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link nav-bar-item-link" href="../about/about.html" target="_blank">À propos</a>
@@ -86,10 +88,15 @@
                                             <li><a class="dropdown-item dropdown-link-programs" href="../programs/daara.html">Daara</a></li>
                                         </ul>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-bar-item-link" href="../teams/teams.html">Notre Equipe</a>
+                                    </li>
                                 </ul>
                                 <div class="mt-3 div-btn" tabindex="0" data-bs-toggle="popover">
                                     <button class="btn btn-secondary btn-log-in" id="btn-connexion">Connexion</button>
-                                    <button type="button" class="btn btn-outline-info btn-log-in">Info</button>
+                                    <button type="button" class="btn btn-outline-info btn-log-in btn-infos-dev">
+                                        <a href="../infos-dev/infos-dev.html">Infos Dev</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -98,22 +105,22 @@
             </div>
         </section>
 
-        <!-- School of Low Programme -->         
+        <!-- Préscolaire -->         
         <div class="container">
             <p class="title-section-programs">
-                La School of Low
+                Préscolaire
             </p>
 
-            <div class="sol-img-text">
-                <div class="sol-text">
-                    <p>Dans un monde professionnel en constante évolution, le juriste moderne doit désormais étoffer sa palette d’outils pour s’établir en partenaire d’affaire à forte valeur ajoutée.</p>
-                    <p>Dans notre vision, nous accordons une place importante à la formation initiale et continue ainsi qu’aux formations en alternance dans l’ensemble des filières proposées afin de permettre une meilleure insertion professionnelle des étudiants incités à effectuer des stages, quel que soit leur niveau d’études.</p>
-                    <p>L’offre de formation est diversifiée et témoigné surtout des liens privilégiés que le Groupe Supdeco entretient avec le monde socio-économique tant dans le secteur privé que dans le secteur public.</p>
-                    <p>Faire le choix d’étudier le droit à Supdeco Dakar, c’est s’engager sur un chemin exigeant et épanouissant.</p>
+            <div class="prescolaire-img-text">
+                <div class="prescolaire-text animated-text-programs">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam doloremque eum, totam sapiente cupiditate obcaecati doloribus nemo aliquid ut! Officia sit impedit atque et? Blanditiis asperiores at inventore ex?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam doloremque eum, totam sapiente cupiditate obcaecati doloribus nemo aliquid ut! Officia sit impedit atque et? Blanditiis asperiores at inventore ex?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam doloremque eum, totam sapiente cupiditate obcaecati doloribus nemo aliquid ut! Officia sit impedit atque et? Blanditiis asperiores at inventore ex?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam doloremque eum, totam sapiente cupiditate obcaecati doloribus nemo aliquid ut! Officia sit impedit atque et? Blanditiis asperiores at inventore ex?</p>
                 </div>
 
-                <div class="sol-img">
-                    <img src="../public/images/schooloflow/sol.jpg" alt="..">
+                <div class="prescolaire-img animated-image-programs">
+                    <img src="../public/assets/images/background.jpg" alt="..">
                 </div>
             </div>
 
@@ -121,10 +128,10 @@
 
         <div class="list-programs container">
             <div class="container1">
-                <div class="master-container">BACHELORS <button class="toggle-button">+</button></div>
+                <div class="master-container">PRESCOLAIRE <button class="toggle-button">+</button></div>
                 <div class="master-items">
                     <div class="master-item">
-                        <div class="master-title">Licence professionnelle métiers du notariat <button class="toggle-button">+</button></div>
+                        <div class="master-title">Petite Section <button class="toggle-button">+</button></div>
                         <div class="master-details">
                             <div class="container mt-4">
                                 <!-- Onglets -->
@@ -138,9 +145,6 @@
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#admission">Admission</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#debouches">Débouchés</a>
-                                    </li>
                                 </ul>
                             
                                 <!-- Contenu des onglets -->
@@ -148,9 +152,9 @@
                                     <!-- Présentation -->
                                     <div id="presentation" class="tab-pane fade show active">
                                         <button class="btn btn-primary">Je télécharge la brochure</button>
-                                        <button class="btn btn-primary">Je candidate à ce programme</button>
+                                        <button class="btn btn-primary disabled">Je candidate à ce programme</button>
                                         <p class="mt-3" style="text-align: justify;">
-                                            La licence professionnelle “Métiers du notariat” poursuit un double objectif : procurer une solide formation juridique dans les matières du notariat et apporter aux étudiants un volet pratique leur permettant de s’intégrer rapidement dans une étude notariale.
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aliquid ipsa commodi, quaerat modi quas impedit ipsam laborum tenetur reiciendis quasi ratione at dolore! Vero, est impedit! Iste, qui cumque.
                                         </p>
                                     </div>
                             
@@ -158,19 +162,11 @@
                                     <div id="programme" class="tab-pane fade">
                                         <h4>Nos Programmes</h4>
                                         <ul>
-                                            <li>Droit des contrats</li>
-                                            <li>Projet tuteuré</li>
-                                            <li>Droit fondamental</li>
-                                            <li>Langues et Communication</li>
-                                            <li>Technique de communication 1</li>
-                                            <li>Anglais des affaires</li>
-                                            <li>Management</li>
-                                            <li>Droit patrimonial de la famille</li>
-                                            <li>Gestion de l’entreprise</li>
-                                            <li>Droit immobilier</li>
-                                            <li>Applications numériques</li>
-                                            <li>Développement personnel et professionnel</li>
-                                            <li>Développement personnel et environnement de l’entreprise</li>
+                                            <li>Programme 1</li>
+                                            <li>Programme 2</li>
+                                            <li>Programme 3</li>
+                                            <li>Programme 4</li>
+                                            <li>Programme 6</li>
                                         </ul>
                                     </div>
                             
@@ -178,36 +174,19 @@
                                     <div id="admission" class="tab-pane fade">
                                         <h4>Conditions d'admission</h4>
                                         <ol>
-                                            <li>1ère année : titulaires du baccalauréat ou d’un titre admis en équivalence</li>
-                                            <li>Étude de dossier, tests et entretien</li>
+                                            <li>Condition d'admisison numéro 1</li>
+                                            <li>Condition d'admisison numéro 2</li>
+                                            <li>Condition d'admisison numéro 3</li>
+                                            <li>Condition d'admisison numéro 4</li>
+                                            <li>Condition d'admisison numéro 5</li>
                                         </ol><br>
-                                        <ol>
-                                            <h4>Admissions parallèles</h4>
-                                            <li>2ème année : titulaires d’un Bac +1 en informatique ou équivalent.</li>
-                                            <li>3ème année : titulaires d’un Bac +2 en informatique ou équivalent.</li>
-                                            <li>Étude de dossier, tests et entretien</li>
-                                        </ol>
-                                    </div>
-                            
-                                    <!-- Débouchés -->
-                                    <div id="debouches" class="tab-pane fade">
-                                        <h4>Débouchés</h4>
-                                        <p>
-                                        <ul type="cicle">
-                                            <li>Clerc de notaire</li>
-                                            <li>Rédacteur d’acte</li>
-                                            <li>Conseiller clientèle dans les banques et compagnies d’assurance</li>
-                                            <li>Métier de la négociation ou de l’administration de biens</li>
-                                            <li>Services de l’urbanisme et des collectivités etc (acte de vente, déclaration propriété etc).</li>
-                                        </ul>
-                                        </p>
-                                    </div>
+                                    </div>                            
                                 </div>
                             </div>                            
                         </div>
                     </div>
                     <div class="master-item">
-                        <div class="master-title">Licence professionnelle en droit des affaires <button class="toggle-button">+</button></div>
+                        <div class="master-title">Moyenne Section <button class="toggle-button">+</button></div>
                         <div class="master-details">
                             <div class="container mt-4">
                                 <!-- Onglets -->
@@ -233,35 +212,21 @@
                                         <button class="btn btn-primary">Je télécharge la brochure</button>
                                         <button class="btn btn-primary">Je candidate à ce programme</button>
                                         <p class="mt-3" style="text-align: justify;">
-                                            La Licence en Droit des Affaires est une formation transversale qui répond à un besoin croissant exprimé par les professionnels du droit (avocats, notaires, huissiers, avoués etc.). Nos diplômés intègrent aisément les banques et les assurances.                                        </p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum quaerat velit rerum praesentium quia repellendus commodi porro earum, distinctio fugit fugiat sint dolor a exercitationem unde facilis voluptate harum ipsa!                                        
+                                        </p>
                                     </div>
                             
                                     <!-- Programme -->
                                     <div id="rogramme" class="tab-pane fade">
                                         <h4>Nos Programmes</h4>
                                         <ul>
-                                            <li>Droit fondamental</li>
-                                            <li>Langues et Communication</li>
-                                            <li>Technique de communication 1</li>
-                                            <li>Anglais des affaires</li>
-                                            <li>Management</li>
-                                            <li>Gestion de l’entreprise</li>
-                                            <li>Applications numériques</li>
-                                            <li>Développement personnel et professionnel</li>
-                                            <li>Droit civil (personnes et famille)</li>
-                                            <li>Droit international</li>
-                                            <li>Organisation juridictionnelle</li>
-                                            <li>Institutions politiques</li>
-                                            <li>Connaissance du monde contemporain</li>
-                                            <li>Développement personnel et environnement de l’entreprise</li>
-                                            <li>Droit des obligations</li>
-                                            <li>Droit pénal général</li>
-                                            <li>Droit des biens</li>
-                                            <li>Droit du travail</li>
-                                            <li>Responsabilité civile</li>
-                                            <li>Procédure pénale</li>
-                                            <li>Droit administratif</li>
-                                            <li>Finances publiques</li>
+                                            <li>Programme 1</li>
+                                            <li>Programme 2</li>
+                                            <li>Programme 3</li>
+                                            <li>Programme 4</li>
+                                            <li>Programme 5</li>
+                                            <li>Programme 6</li>
+                                            <li>Programme 7</li>
                                         </ul>
                                     </div>
                             
@@ -269,37 +234,20 @@
                                     <div id="dmission" class="tab-pane fade">
                                         <h4>Conditions d'admission</h4>
                                         <ol>
-                                            <li>1ère année : titulaires du baccalauréat ou d’un titre admis en équivalence</li>
-                                            <li>Étude de dossier, tests et entretien</li>
-
-                                            <h4>Admissions parallèles</h4>
-                                            <ul>
-                                                <li>2ème année : titulaires d’un Bac +1 en informatique ou équivalent.</li>
-                                                <li>3ème année : titulaires d’un Bac +2 en informatique ou équivalent.</li>
+                                            <li>Condition d'admission n°1</li>
+                                            <li>Condition d'admission n°2</li>
+                                            <li>Condition d'admission n°3</li>
+                                            <li>Condition d'admission n°4</li>
+                                            <li>Condition d'admission n°5</li>
                                             </ul>
                                         </ol>
-                                    </div>
-                            
-                                    <!-- Débouchés -->
-                                    <div id="ebouches" class="tab-pane fade">
-                                        <h4>Débouchés</h4>
-                                        <p>
-                                            <h5>
-                                                Option Ingénierie des données et Intelligence Artificielle (IDIA)
-                                            </h5>
-                                            <ul type="cicle">
-                                                <li>Responsable département juridique en entreprise</li>
-                                                <li>Collaborateur dans les cabinets de notariat, cabinets d’avocats, cabinets conseils juridique et fiscale</li>
-                                                <li>Gestionnaire de patrimoine</li>
-                                            </ul>
-                                        </p>
                                     </div>
                                 </div>
                             </div>                            
                         </div>
                     </div>
                     <div class="master-item">
-                        <div class="master-title">Licence professionnelle droit social et ressources humaines <button class="toggle-button">+</button></div>
+                        <div class="master-title">Grande Section <button class="toggle-button">+</button></div>
                         <div class="master-details">
                             <div class="container mt-4">
                                 <!-- Onglets -->
@@ -313,9 +261,6 @@
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#mission">Admission</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#bouches">Débouchés</a>
-                                    </li>
                                 </ul>
                             
                                 <!-- Contenu des onglets -->
@@ -325,7 +270,7 @@
                                         <button class="btn btn-primary">Je télécharge la brochure</button>
                                         <button class="btn btn-primary">Je candidate à ce programme</button>
                                         <p class="mt-3" style="text-align: justify;">
-                                            Les postes en GRH, en plus des connaissances managériales, exigent désormais une connaissance approfondie en droit social (droit du travail et de la sécurité sociale). Cette formation vous donne les outils et aptitudes nécessaires pour intégrer le monde professionnel.
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident corrupti ad deserunt aliquid molestiae excepturi odit dolorum illo doloribus explicabo repellat, temporibus, rerum at cum ullam. Iusto, dolorem magnam!                                        
                                         </p>
                                     </div>
                             
@@ -333,15 +278,11 @@
                                     <div id="ogramme" class="tab-pane fade">
                                         <h4>Nos Programmes</h4>
                                         <ul>
-                                            <li>Droit du travail</li>
-                                            <li>Droit de la sécurité sociale</li>
-                                            <li>Gestion des relations sociales</li>
-                                            <li>Processus de recrutement</li>
-                                            <li>Développement personnel et environnement de l’entreprise</li>
-                                            <li>Langues et communication</li>
-                                            <li>Gestion des entreprises</li>
-                                            <li>Contentieux du droit social</li>
-                                            <li>Gestion administrative des RH</li>
+                                            <li>PRogramme n°1</li>
+                                            <li>PRogramme n°2</li>
+                                            <li>PRogramme n°3</li>
+                                            <li>PRogramme n°4</li>
+                                            <li>PRogramme n°5</li>
                                         </ul>
                                     </div>
                             
@@ -349,33 +290,12 @@
                                     <div id="mission" class="tab-pane fade">
                                         <h4>Conditions d'admission</h4>
                                         <ol>
-                                            <li>1ère année : titulaires du baccalauréat ou d’un titre admis en équivalence</li>
-                                            <li>Étude de dossier, tests et entretien</li>
-                                        </ol>
-
-                                        <h4>Admissions Parallèles</h4>
-                                        <ol>
-                                            <li>2ème année : titulaires d’un Bac +1 en informatique  ou équivalent.</li>
-                                            <li>3ème année : titulaires d’un Bac +2 en informatique  ou équivalent.</li>
-                                            <li>Étude de dossier, tests et entretien</li>
-                                        </ol>
-                                    </div>
-                            
-                                    <!-- Débouchés -->
-                                    <div id="bouches" class="tab-pane fade">
-                                        <h4>Débouchés</h4>
-                                        <p>
-                                            <h5>
-                                                Option Ingénierie des données et Intelligence Artificielle (IDIA)
-                                            </h5>
-                                            <ul type="cicle">
-                                                <li>Gestionnaire administratif</li>
-                                                <li>Assistant ou Chargé de recrutement</li>
-                                                <li>Gestionnaire de carrière</li>
-                                                <li>Collaborateur gestion administrative</li>
-                                                <li>Assistant gestion du personnel</li>
-                                            </ul>
-                                        </p>
+                                            <li>Condition d'admission n°1</li>
+                                            <li>Condition d'admission n°2</li>
+                                            <li>Condition d'admission n°3</li>
+                                            <li>Condition d'admission n°4</li>
+                                            <li>Condition d'admission n°5</li>
+                                            <li>Condition d'admission n°6</li>
                                     </div>
                                 </div>
                             </div>                            
@@ -383,100 +303,56 @@
                     </div>
                 </div>
             </div>
-        
-            <div class="container1">
-                <div class="master-container">MASTERS <button class="toggle-button">+</button></div>
-                <div class="master-items">
-                    <div class="master-item">
-                        <div class="master-title">Master professionnel droit des affaires et fiscalité <button class="toggle-button">+</button></div>
-                        <div class="master-details">
-                            <div class="container mt-4">
-                                <!-- Onglets -->
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-bs-toggle="tab" href="#presentation-master-sol-true">Présentation</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#programme-master-sol-true">Programme</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#admission-master-sol-true">Admission</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#debouches-master-sol-true">Débouchés</a>
-                                    </li>
-                                </ul>
-                            
-                                <!-- Contenu des onglets -->
-                                <div class="tab-content mt-3">
-                                    <!-- Présentation -->
-                                    <div id="presentation-master-sol-true" class="tab-pane fade show active">
-                                        <button class="btn btn-primary">Je télécharge la brochure</button>
-                                        <button class="btn btn-primary">Je candidate à ce programme</button>
-                                        <p class="mt-3" style="text-align: justify;">
-                                            Dans le prolongement de la licence professionnelle en droit des affaires et fiscalité, ce programme s’inscrit dans une logique de mieux former les juristes en droit des affaires, plus spécialement en droit bancaire et financier mais également en ingénierie sociétaire.
-                                        </p>
-                                        <p class="mt-3" style="text-align: justify;">
-                                            L’objectif de cette formation est de préparer les étudiants au traitement pratique de tous les aspects juridiques, fiscaux, sociaux et comptables d’une entreprise : contraintes ou incitations fiscales, rédaction de contrats, analyse de documents comptables, pratique des principaux mécanismes sociétaires, contentieux d’affaires.
-                                        </p>
-                                    </div>
-                            
-                                    <!-- Programme -->
-                                    <div id="programme-master-sol-true" class="tab-pane fade">
-                                        <h4>Nos Programmes</h4>
-                                        <ul>
-                                            <li>Fiscalité approfondie</li>
-                                            <li>Droit social approfondi</li>
-                                            <li>Droit des sociétés approfondi</li>
-                                            <li>Fiscalité Internationale</li>
-                                            <li>Maîtrise Langue étrangère</li>
-                                            <li>Droit fiscal</li>
-                                            <li>Droit des sociétés</li>
-                                            <li>Analyse comptable et financière</li>
-                                            <li>Finance</li>
-                                            <li>Gestion d’entreprise</li>
-                                            <li>Anglais des Affaires</li>
-                                            <li>Conférences</li>
-                                        </ul>
-                                    </div>
-                            
-                                    <!-- Admission -->
-                                    <div id="admission-master-sol-true" class="tab-pane fade">
-                                        <h4>Conditions d'admission</h4>
-                                        <ol>
-                                            <li>Être titulaire d’un Bac Scientifique</li>
-                                            <li>Déposer un dossier complet</li>
-                                            <li>Passer le concours d’entrée</li>
-                                            <li>Entretien</li>
-                                        </ol>
-                                    </div>
-                            
-                                    <!-- Débouchés -->
-                                    <div id="debouches-master-sol-true" class="tab-pane fade">
-                                        <h4>Débouchés</h4>
-                                        <p>
-                                            <h5>
-                                                Professionnels et étudiants titulaires :
-                                            </h5>
-                                            <ul type="cicle">
-                                                <li>d’un Bac + 3 pour le Master 1</li>
-                                                <li>d’un Bac + 4 pour le Master 2 en gestion</li>
-                                            </ul>
-                                            <p>L’admission se fait sur entretien après dépôt et évaluation d’un dossier composé :</p>
-                                            <li>de l’attestation ou du diplôme de Bac</li>
-                                            <li>des relevés de notes et de l’attestation de la licence d’une photo</li>
-                                            <li>de la copie d’une pièce d’identité ou d’un extrait de naissance</li>
-                                            <li>d’une attestation de travail ou de stage (pour les professionnels)</li>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>        
         </div>
 
+        <!-- SECTION FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h2>Groupe Scolaire Keur Badiane Maï</h2>
+                    <p>Première Business School du Sénégal</p>
+                    <p><strong>Contactez-nous :</strong></p>
+                    <p>Téléphone : +221 77 777 77 77</p>
+                    <p>Email : <a href="mailto:gskbm@gmail.com">gskbm@gmail.com</a></p>
+                    <p>Adresse : Darou Marnane, Touba, Sénégal</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="../home/home.html#programs">Programmes</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#galerie" target="_blank">Galerie Photo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Suivez-nous sur les réseaux sociaux</h3>
+                    <ul style="font-size: x-large; transform: translateX(80px);">
+                        <li><a href="https://www.facebook.com/"><i class="bi bi-facebook facebook-link"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="bi bi-instagram instagram-link"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="bi bi-youtube youtube-link"></i></a></li>
+                        <li><a href="infos-dev/info-dev.html" target="_blank"><i class="bi bi-info-square-fill info-dev-link"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-map">
+                    <h3>Localisation</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509485!2d144.9537353153188!3d-37.81627997975184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11c4b7%3A0x5045675218ceed5e!2sYour%20Location%20Here!5e0!3m2!1sen!2sus!4v1610000000000" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Mentions légales | Politique de confidentialité | Conditions d'utilisation</p>
+            </div>
+        </footer>
+
         <script src="../programs/script.js"></script>
+        <script >
+            document.getElementById('btn-connexion').addEventListener('click', function() {
+                alert('Connexion indisponible pour le moment.');
+            });
+        </script>
     </body>
 </html>
