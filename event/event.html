@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="apple-touch-icon" sizes="180x180" href="../public/assets/favicon_io/apple-touch-icon.png">
@@ -11,7 +11,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../public/assets/favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../public/assets/favicon_io/site.webmanifest">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <title>GSKBM | Daara</title>
+        <title>GSKBM | Evénements</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <!-- Link for bootstrap -->
@@ -21,12 +21,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
         <!-- Link for main style css -->
         <link rel="stylesheet" href="../public/css/style.css">
-        <!-- Link for program css page -->
-        <link rel="stylesheet" href="../programs/daara.css">
+        <!-- Link for about css page -->
+        <link rel="stylesheet" href="../event/event.css">
         <!-- link for responsive style -->
         <link rel="stylesheet" href="../public/css/responsive.css"> 
         <!-- link for responsive style -->
-        <link rel="stylesheet" href="../programs/programs-responsive.css"> 
+        <link rel="stylesheet" href="../event/event-responsive.css"> 
     </head>
     <body>
         <!-- SECTION MENU -->
@@ -73,7 +73,7 @@
                                         <a class="nav-link nav-bar-item-link" aria-current="page" href="../home/home.html">Accueil</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link nav-bar-item-link" href="../about/about.html" target="_blank">À propos</a>
+                                        <a class="nav-link nav-bar-item-link" href="../about/about.html">À propos</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link nav-bar-item-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -111,87 +111,72 @@
             </div>
         </section>
 
-        <!-- Daara -->         
-        <div class="container">
-            <p class="title-section-programs">
-                DAARA
-            </p>
+        <div class="container-events">
+            <h1 class="title-section">Actualités & Événements</h1>
 
-            <div class="daara-img-text">
-                <div class="daara-text animated-text-programs">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam doloremque eum, totam sapiente cupiditate obcaecati doloribus nemo aliquid ut! Officia sit impedit atque et? Blanditiis asperiores at inventore ex?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam doloremque eum, totam sapiente cupiditate obcaecati doloribus nemo aliquid ut! Officia sit impedit atque et? Blanditiis asperiores at inventore ex?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam doloremque eum, totam sapiente cupiditate obcaecati doloribus nemo aliquid ut! Officia sit impedit atque et? Blanditiis asperiores at inventore ex?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam doloremque eum, totam sapiente cupiditate obcaecati doloribus nemo aliquid ut! Officia sit impedit atque et? Blanditiis asperiores at inventore ex?</p>
+            <!-- Premier événement -->
+            <div class="event-card">
+                <img src="../public/assets/images/news.jpg" alt="Sport">
+                <div class="event-content">
+                    <h2>Journée Sportive</h2>
+                    <p class="author">Par Mme Ndiaye</p>
+                    <p class="summary">Une journée de sport entre écoles...</p>
+                    <button 
+                        class="read-more"
+                        data-title="Journée Sportive"
+                        data-author="Mme Ndiaye"
+                        data-content="Les élèves ont participé à différentes activités sportives : football, basketball, relais... Une ambiance conviviale !"
+                    >Lire la suite</button>
                 </div>
+            </div>
 
-                <div class="daara-img animated-image-programs">
-                    <img src="../public/assets/images/background.jpg" alt="..">
+            <!-- Deuxième événement -->
+            <div class="event-card">
+                <img src="../public/assets/images/news.jpg" alt="Conférence">
+                <div class="event-content">
+                    <h2>Conférence sur l’environnement</h2>
+                    <p class="author">Par Mr Diallo</p>
+                    <p class="summary">Sensibilisation des jeunes à l’écologie...</p>
+                    <button 
+                        class="read-more"
+                        data-title="Conférence sur l’environnement"
+                        data-author="Mr Diallo"
+                        data-content="Lors de cette conférence, les élèves ont échangé sur les enjeux climatiques, les gestes éco-responsables et les innovations vertes."
+                    >Lire la suite</button>
+                </div>
+            </div>
+
+            <!-- 3 événement -->
+            <div class="event-card">
+                <img src="../public/assets/images/news.jpg" alt="Conférence">
+                <div class="event-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="author">Par Mr Fall</p>
+                    <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <button 
+                        class="read-more"
+                        data-title="Lorem Ipsum"
+                        data-author="Mr Fall"
+                        data-content="Lorem ipsum dolor sit amet, . Adipisci sunt hic dolores accusantium tenetur quasi, facere dicta beatae nam ipsa aperiam maxime corrupti voluptatem amet expedita neque error repudiandae. Dolorum!"
+                    >Lire la suite</button>
                 </div>
             </div>
         </div>
 
-        <div class="list-programs container">
-            <div class="container1">
-                <div class="master-container">DAARA <button class="toggle-button">+</button></div>
-                <div class="master-items">
-                    <!-- Daara -->
-                    <div class="master-item">
-                        <div class="master-title">Daara<button class="toggle-button">+</button></div>
-                        <div class="master-details">
-                            <div class="container mt-4">
-                                <!-- Onglets -->
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" data-bs-toggle="tab" href="#Spresentation">Présentation</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#Sprogramme">Programme</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="tab" href="#Sadmission">Admission</a>
-                                    </li>
-                                </ul>
-                            
-                                <!-- Contenu des onglets -->
-                                <div class="tab-content mt-3">
-                                    <!-- Présentation -->
-                                    <div id="Spresentation" class="tab-pane fade show active">
-                                        <button class="btn btn-primary">Je télécharge la brochure</button>
-                                        <button class="btn btn-primary disabled">Je candidate à ce programme</button>
-                                        <p class="mt-3" style="text-align: justify;">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente aliquid ipsa commodi, quaerat modi quas impedit ipsam laborum tenetur reiciendis quasi ratione at dolore! Vero, est impedit! Iste, qui cumque.
-                                        </p>
-                                    </div>
-                            
-                                    <!-- Programme -->
-                                    <div id="Sprogramme" class="tab-pane fade">
-                                        <h4>Nos Programmes</h4>
-                                        <ul>
-                                            <li>Programme 1</li>
-                                            <li>Programme 2</li>
-                                            <li>Programme 3</li>
-                                            <li>Programme 4</li>
-                                            <li>Programme 6</li>
-                                        </ul>
-                                    </div>
-                            
-                                    <!-- Admission -->
-                                    <div id="Sadmission" class="tab-pane fade">
-                                        <h4>Conditions d'admission</h4>
-                                        <ol>
-                                            <li>Condition d'admisison numéro 1</li>
-                                            <li>Condition d'admisison numéro 2</li>
-                                            <li>Condition d'admisison numéro 3</li>
-                                            <li>Condition d'admisison numéro 4</li>
-                                            <li>Condition d'admisison numéro 5</li>
-                                        </ol><br>
-                                    </div>                            
-                                </div>
-                            </div>                            
-                        </div>
-                    </div>
-            </div>
+        <!-- Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Journée Sportive Inter-Écoles</h2>
+                <p><strong>Par Mme Ndiaye</strong></p>
+                <div class="modal-body">
+                    <p>
+                    Les élèves ont participé à différentes activités sportives telles que le football, le basketball et la course de relais. 
+                    L'ambiance était incroyable et a permis de renforcer l'esprit d'équipe. <br><br>
+                    L’événement a également été une occasion de renforcer les liens entre les différentes écoles participantes. Les parents, les enseignants 
+                    et les élèves ont tous contribué à la réussite de cette journée mémorable. 
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -210,7 +195,7 @@
                 <div class="footer-links">
                     <h3>Liens utiles</h3>
                     <ul>
-                        <li><a href="../about/about.html">À propos</a></li>
+                        <li><a href="#">À propos</a></li>
                         <li><a href="../home/home.html#programs">Programmes</a></li>
                         <li><a href="#">Admissions</a></li>
                         <li><a href="#galerie" target="_blank">Galerie Photo</a></li>
@@ -223,7 +208,7 @@
                         <li><a href="https://www.facebook.com/"><i class="bi bi-facebook facebook-link"></i></a></li>
                         <li><a href="https://www.linkedin.com/"><i class="bi bi-instagram instagram-link"></i></a></li>
                         <li><a href="https://www.linkedin.com/"><i class="bi bi-youtube youtube-link"></i></a></li>
-                        <li><a href="infos-dev/info-dev.html" target="_blank"><i class="bi bi-info-square-fill info-dev-link"></i></a></li>
+                        <li><a href="../infos-dev/info-dev.html" target="_blank"><i class="bi bi-info-square-fill info-dev-link"></i></a></li>
                     </ul>
                 </div>
 
@@ -238,7 +223,9 @@
             </div>
         </footer>
 
-        <script src="../programs/script.js"></script>
+
+        <!-- // Fonction pour afficher le menu au clic sur le bouton -->
+        <script src="../event/event.js"></script>
         <script >
             document.getElementById('btn-connexion').addEventListener('click', function() {
                 alert('Connexion indisponible pour le moment.');

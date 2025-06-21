@@ -12,6 +12,10 @@
     .list-programs{
         transform: translateY(-60px);
     }
+
+    .list-programs .container1 .master-items{
+        font-size: 12px;
+    }
 }
 
 /* Tablettes (appareils moyens) */

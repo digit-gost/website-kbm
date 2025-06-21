@@ -1,13 +1,3 @@
-.title-section-devs{
-    margin-top: 12%;
-    margin-bottom: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 55px;
-    color: var(--main-color);
-}
-
 .infos-dev-body .title{
     text-align: center;
 }

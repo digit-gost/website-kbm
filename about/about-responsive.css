@@ -39,6 +39,10 @@
   .presentation-container-7{
     transform: translateY(-50px);
   }
+
+  .presentation-container-3 .container-counters-statistics{
+    transform: translateY(10%);
+  }
 }
 
 

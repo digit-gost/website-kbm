@@ -1,0 +1,112 @@
+.container-events {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-section{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 55px;
+    color: var(--main-color);
+}
+
+
+.event-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+}
+
+.event-content {
+  padding: 20px;
+}
+
+.event-content h2 {
+  margin: 0 0 10px;
+}
+
+.author {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  background-color: #009150;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background-color: #00753c;
+}
+
+/* MODAL STYLING */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.modal-content {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+  transform: translateY(-30px);
+  opacity: 0;
+  animation: slideFade 0.4s forwards;
+}
+
+.close-btn {
+  font-size: 50px;
+  float: right;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Animations */
+@keyframes slideFade {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { background-color: rgba(0,0,0,0); }
+  to { background-color: rgba(0,0,0,0.6); }
+}
