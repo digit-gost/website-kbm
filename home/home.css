@@ -160,8 +160,10 @@
 }
   
 .description-photo img{
-    width: 28%;
-    border-radius: 20px;
+    width: 35%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
     margin-top: 20px;
 }
   
@@ -188,7 +190,7 @@ img {
     border-radius: 20px; 
     overflow: hidden; 
     box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);  
     transition: transform 1s, box-shadow 0.3s;
     opacity: 0;
     transform: translateX(-60px);
@@ -359,7 +361,7 @@ img {
     padding: 10px 10px;
     /* background: linear-gradient(90deg, var(--main-color) 0%, var(--second-color) 100%, var(--black-color), var(--black-color) 90%); */
     background: linear-gradient(45deg, var(--main-color) 0%, var(--second-color) 50%, var(--black-color) 100%);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     border-radius: 20px;
     max-width: 900px;
     margin: 60px auto;

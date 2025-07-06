@@ -228,7 +228,7 @@
       width: 100%;
       height: 250px;
     }
-  }
+}
 
   @media screen and (max-width: 600px) {
     footer {
@@ -345,3 +345,31 @@
 }
 
 
+@media screen and (orientation: landscape) {
+    .menu .icones-menu{
+        display: none;
+    }
+
+    .banner{
+        transform: translateY(15px);
+    }
+
+    .about img{
+        margin-bottom: 50px;
+    }
+
+    .testimonial-div{
+        margin-top: 50px;
+    }
+}
+@media screen and (orientation: portrait) {
+    .menu .icones-menu{
+        display: none;
+    }
+}
+
+@media (max-width: 1025px) {
+    .counters-statistics .container-counters-statistics .counters{
+        transform: translateY(0px);
+    }
+}
