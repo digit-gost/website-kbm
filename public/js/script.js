@@ -17,7 +17,7 @@ let allValues = document.querySelectorAll(".value");
 
 function startCounting(singleValue) {
   let endValue = parseInt(singleValue.getAttribute("data-value"));
-  let duration = Math.floor(7000 / endValue);
+  let duration = Math.floor(5000 / endValue);
   let startValue = 0;
 
   let counter = setInterval(() => {

@@ -361,6 +361,12 @@
     .testimonial-div{
         margin-top: 50px;
     }
+
+    .menu.hide-on-scroll {
+        transform: none !important;
+        transition: none !important;
+    }
+
 }
 @media screen and (orientation: portrait) {
     .menu .icones-menu{
@@ -372,4 +378,11 @@
     .counters-statistics .container-counters-statistics .counters{
         transform: translateY(0px);
     }
+}
+
+@media (max-width: 1024px) {
+  .menu.hide-on-scroll {
+    transform: none !important;
+    transition: none !important;
+  }
 }

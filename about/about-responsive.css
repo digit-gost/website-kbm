@@ -125,3 +125,13 @@
     transform: translateY(100px);
   }
 }
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  .presentation-container-3 h1, .presentation-container-3 span{
+    transform: translateY(-30px);
+  }
+
+  .presentation-container-3 .container-counters-statistics{
+    transform: translateY(100px);
+  }
+}
