@@ -203,6 +203,14 @@
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
+  transition: 1s;
+}
+
+.contact_us_6 .submit-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, var(--main-color) 0%, var(--second-color) 50%, var(--black-color) 100%);
+  transition: 1s;
+  letter-spacing: 5px;
 }
 
 .contact_us_6 .form-box {
